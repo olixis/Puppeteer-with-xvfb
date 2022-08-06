@@ -9,7 +9,7 @@ app.get("/", (req, res) => res.send("Hello World!"));
 app.post("/scrape", async (req, res) => {
   const { search } = req.body;
   const data = await runner(search);
-  return res.json({ data });
+  return res.send(data);
 });
 
 app.listen(port, () =>
