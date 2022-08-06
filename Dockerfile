@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:16
 
 # Install dependencies
 RUN apt-get update &&\
@@ -19,7 +19,7 @@ COPY package.json /app
 RUN npm install
 COPY . /app
 
-# Start server on port 3000∂
+# Start server on port 3000
 EXPOSE 3000:3001
 ENV PORT=3001
 
