@@ -27,4 +27,4 @@ ENV PORT=3001
 ENV DISPLAY :99
 
 # Start script on Xvfb
-CMD Xvfb :99 -screen 0 1024x768x16 & npm start
+CMD Xvfb :99 -screen 0 1920x1080x24 & npm start
